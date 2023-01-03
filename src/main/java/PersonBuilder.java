@@ -1,7 +1,7 @@
 public class PersonBuilder {
     private String name;
     private String surname;
-    private int age;
+    private Integer age;
     private String address;
 
     public PersonBuilder setName(String name) {
@@ -14,7 +14,7 @@ public class PersonBuilder {
         return this;
     }
 
-    public PersonBuilder setAge(int age) {
+    public PersonBuilder setAge(Integer age) {
         if (age < 0 || age > 120){
             throw new IllegalArgumentException("Некорректный возраст");
         } else this.age = age;

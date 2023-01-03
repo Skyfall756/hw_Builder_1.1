@@ -6,13 +6,15 @@ public class Main {
                 .setAge(31)
                 .setAddress("Сидней")
                 .build();
+//        mom.happyBirthday();
         Person son = mom.newChildBuilder()
                 .setName("Антошка")
                 .build();
+//        son.happyBirthday();
         System.out.println("У " + mom + " есть сын, " + son);
 
         try {
-            // Не хватает обяхательных полей
+            // Не хватает обязательных полей
             new PersonBuilder().build();
         } catch (IllegalStateException e) {
             e.printStackTrace();
